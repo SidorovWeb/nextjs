@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
 export const Header = () => {
   return (
@@ -12,5 +12,5 @@ export const Header = () => {
         <Link href='/burgers'>burgers</Link>
       </nav>
     </header>
-  );
-};
+  )
+}

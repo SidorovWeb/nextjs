@@ -1,9 +1,9 @@
-import React, { FC } from "react";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
+import React, { FC } from "react"
+import { Footer } from "./Footer"
+import { Header } from "./Header"
 
 interface ILayout {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export const Layout: FC<ILayout> = ({ children }) => {
@@ -13,5 +13,5 @@ export const Layout: FC<ILayout> = ({ children }) => {
       {children}
       <Footer />
     </div>
-  );
-};
+  )
+}
