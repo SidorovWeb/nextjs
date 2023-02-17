@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Balsamiq+Sans:wght@400;700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext&effect=fire-animation|neon|outline");
-
 body {
   color: #2e2e2e;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: var(--Balsamiq-font);
   font-weight: 400;
   background-size: 200px;
   background-color: #ffffff;

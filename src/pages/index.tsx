@@ -12,7 +12,7 @@ export default function Home() {
         <meta name='title' content='учебный проект' />
       </Head>
       <div className={style.container}>
-        <h1 className={`${style.title} font-effect-fire-animation`}>Home</h1>
+        <h1 className={`${style.title}`}>Home</h1>
         <div className={style.mainImage}>
           <Image src={"/vercel.svg"} alt='vercel' width={400} height={300} />
         </div>
