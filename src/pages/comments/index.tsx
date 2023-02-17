@@ -1,14 +1,8 @@
+import { IComment } from "@/types/types"
 import { GetServerSideProps, InferGetServerSidePropsType } from "next"
 import Head from "next/head"
+import Link from "next/link"
 import React from "react"
-
-interface IComment {
-  postId: number
-  id: number
-  name: string
-  email: string
-  body: string
-}
 
 export default function Reviews({
   reviews,
@@ -20,13 +14,15 @@ export default function Reviews({
         <meta name='title' content='учебный проект' />
       </Head>
       <div>
-        <h1>Comments</h1>
+        <h1>SSG - рендеринг на сервере</h1>
         <div className='reviews'>
           {!!reviews.length &&
             reviews.map((res: IComment) => {
               return (
                 <div key={res.id} className='review'>
-                  {res.id}) {`${res.body.slice(0, 90)}...`}
+                  <Link href={`/comments/${res.id}`}>
+                    {res.id}) {`${res.body.slice(0, 90)}...`}
+                  </Link>
                 </div>
               )
             })}

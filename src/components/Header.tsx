@@ -8,8 +8,8 @@ export const Header = () => {
       <nav>
         <Link href='/'>home</Link>
         <Link href='/about'>about</Link>
-        <Link href='/reviews'>comments</Link>
-        <Link href='/burgers'>burgers</Link>
+        <Link href='/comments'>comments</Link>
+        <Link href='/posts'>posts</Link>
       </nav>
     </header>
   )
